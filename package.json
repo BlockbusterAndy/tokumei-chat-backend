@@ -1,12 +1,23 @@
 {
-  "name": "tokumei-chat-frontend",
+  "name": "tokumei-chat-backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [ "chat", "backend", "tokumei-chat", "nodejs", "express", "socket.io", "redis", "mongoose" ],
   "author": "",
   "license": "ISC",
-  "description": "backend for tokumei-chat"
+  "description": "backend for tokumei-chat",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10",
+    "redis": "^5.1.1",
+    "socket.io": "^4.8.1"
+  }
 }
